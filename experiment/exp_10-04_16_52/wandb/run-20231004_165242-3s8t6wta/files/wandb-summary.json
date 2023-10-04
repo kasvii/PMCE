@@ -1,1 +1,0 @@
-{"train_loss/vertex_loss": 0.17469996213912964, "train_loss/normal_loss": 0.047026392072439194, "train_loss/edge_loss": 0, "train_loss/mesh2joint3d_loss": 0.1011430099606514, "train_loss/evojoint3d_loss": 0.5088953375816345, "train_loss/liftjoint3d_loss": 0.026486506685614586, "_timestamp": 1696409623, "_runtime": 61, "_step": 26, "_wandb": {"runtime": 61}}
