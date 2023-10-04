@@ -25,8 +25,8 @@ import os.path as osp
 from pytube import YouTube
 from collections import OrderedDict
 
-from lib.utils.smooth_bbox import get_smooth_bbox_params, get_all_bbox_params
-from lib.utils._img_utils import get_single_image_crop_demo
+from utils.smooth_bbox import get_smooth_bbox_params, get_all_bbox_params
+from utils._img_utils import get_single_image_crop_demo
 
 
 def preprocess_video(video, joints2d, bboxes, frames, scale=1.0, crop_size=224):

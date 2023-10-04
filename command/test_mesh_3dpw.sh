@@ -1,1 +1,1 @@
-python ./main/test.py --cfg ./config/test_mesh_3dpw.yml --gpu 5
+python ./main/test.py --cfg ./config/test_mesh_3dpw.yml --gpu 0

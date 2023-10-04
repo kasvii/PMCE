@@ -1,0 +1,29 @@
+{
+    "os": "Linux-5.4.0-92-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2023-10-04T08:52:44.751691",
+    "startedAt": "2023-10-04T08:52:42.800645",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 8,
+    "cpu_count": 112,
+    "cuda": null,
+    "args": [
+        "--cfg",
+        "./config/train_mesh_3dpw.yml",
+        "--gpu",
+        "0"
+    ],
+    "state": "running",
+    "program": "./main/train.py",
+    "codePath": "main/train.py",
+    "git": {
+        "remote": "https://github.com/kasvii/PMCE.git",
+        "commit": "a1c3d31c1a5e320e9d7db366771b266359841df7"
+    },
+    "email": "348866213@qq.com",
+    "root": "/home/youyx/models/PMCE",
+    "host": "hri-8-3090",
+    "username": "youyx",
+    "executable": "/home/youyx/anaconda3/envs/pose2mesh-env/bin/python"
+}

@@ -41,10 +41,10 @@ This is the offical [Pytorch](https://pytorch.org/) implementation of the paper:
     <img src="assets/framework.png" /> 
 </p>
 <p align="center">
-  <img src="assets/demo1.gif" height="120" /> 
-  <img src="assets/demo2.gif" height="120" /> 
-  <img src="assets/demo3.gif" height="120" /> 
-  <img src="assets/demo4.gif" height="120" /> 
+  <img src="assets/demo1.gif" height="110" /> 
+  <img src="assets/demo2.gif" height="110" /> 
+  <img src="assets/demo3.gif" height="110" /> 
+  <img src="assets/demo4.gif" height="110" /> 
 </p>
 
 
@@ -89,7 +89,7 @@ pip install -v -e .
 5. Run. The output is at `./output` folder.
 ```bash
 # Change 'sample_video' to your video name.
-python ./run.py --vid_file demo/sample_video.mp4 --gpu 0
+python ./main/run_demo.py --vid_file demo/sample_video.mp4 --gpu 0
 ```
 
 ## Implementation
@@ -165,7 +165,7 @@ bash train_pose_h36m.sh
 bash train_pose_3dpw.sh
 ```
 
-Stage 2: To train the all network for final mesh. Configs of the experiments can be found and edited in `./config` folder.
+Stage 2: To train the all network for final mesh. Configs of the experiments can be found and edited in `./config` folder. Change `posenet_path` in `./config/train_mesh_*.yml` to the path of the pre-trained pose model.
 ```bash
 # Human3.6M
 bash train_pose_h36m.sh

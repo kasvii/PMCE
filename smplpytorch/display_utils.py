@@ -1,8 +1,6 @@
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-# plt.switch_backend('agg')
-from vis import vis_3d_pose
 
 
 def display_model(
@@ -35,9 +33,6 @@ def display_model(
         mesh.set_edgecolor(edge_color)
         mesh.set_facecolor(face_color)
         ax.add_collection3d(mesh)
-    if with_joints:
-        vis_3d_pose(joints, custom_skeleton, prefix='vis', gt=True, ax_in=ax)
-        # draw_skeleton(joints, kintree_table=kintree_table, ax=ax)
     ax.set_xlabel('X')
     ax.set_ylabel('Z')
     ax.set_zlabel('Y')

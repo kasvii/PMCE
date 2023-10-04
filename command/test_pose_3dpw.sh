@@ -1,1 +1,1 @@
-python ./main/test.py --cfg ./config/test_pose_3dpw.yml --gpu 6
+python ./main/test.py --cfg ./config/test_pose_3dpw.yml --gpu 0

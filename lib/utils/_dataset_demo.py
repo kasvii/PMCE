@@ -22,8 +22,8 @@ import torch
 from torch.utils.data import Dataset
 from torchvision.transforms.functional import to_tensor
 
-from lib.utils.smooth_bbox import get_all_bbox_params
-from lib.utils._img_utils import get_single_image_crop_demo
+from utils.smooth_bbox import get_all_bbox_params
+from utils._img_utils import get_single_image_crop_demo
 
 
 class CropDataset(Dataset):

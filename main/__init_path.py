@@ -22,5 +22,5 @@ add_path(data_path)
 smpl_path = osp.join(this_dir, '..', 'smplpytorch')
 add_path(smpl_path)
 
-mano_path = osp.join(this_dir, '..', 'manopth')
+mano_path = osp.join(this_dir, '..', 'demo')
 add_path(mano_path)

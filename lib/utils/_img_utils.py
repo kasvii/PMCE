@@ -177,7 +177,7 @@ def get_image_crops(image_file, bboxes):
     batch_image = torch.cat([x.unsqueeze(0) for x in crop_images])
     return batch_image
 
-from lib.utils._occ_utils import occlude_with_objects, paste_over
+from utils._occ_utils import occlude_with_objects, paste_over
 
 
 def get_single_image_crop(image, occluders, bbox, scale=1.3, occ=False):
