@@ -1,0 +1,14 @@
+DATASET:
+    test_list: ['Human36M']
+    input_joint_set: 'human36'
+    target_joint_set: 'human36'
+    workers: 16
+    use_gt_input: False
+
+MODEL:
+    name: 'PoseEst'
+
+TEST:
+    batch_size: 64
+    shuffle: False
+    weight_path: './experiment/pretrained/pose_h36m.pth.tar'

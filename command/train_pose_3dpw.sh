@@ -1,0 +1,1 @@
+python ./main/train.py --cfg ./config/train_pose_3dpw.yml --gpu 0

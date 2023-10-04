@@ -1,0 +1,1 @@
+python ./main/test.py --cfg ./config/test_mesh_mpii3d.yml --gpu 5

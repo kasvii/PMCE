@@ -1,0 +1,18 @@
+DATASET:
+    test_list: ['PW3D']
+    input_joint_set: 'coco'
+    target_joint_set: 'human36'
+    workers: 16
+    use_gt_input: False
+
+MODEL:
+    name: 'PMCE'
+    normal_loss_weight: 0.1
+    edge_loss_weight: 20
+    joint_loss_weight: 0.001
+
+TEST:
+    batch_size: 64
+    shuffle: False
+    vis: False
+    weight_path: './experiment/pretrained/mesh_3dpw.pth.tar'

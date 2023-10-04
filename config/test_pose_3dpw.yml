@@ -1,0 +1,14 @@
+DATASET:
+    test_list: ['PW3D']
+    input_joint_set: 'coco'
+    target_joint_set: 'coco'
+    workers: 16
+    use_gt_input: False
+
+MODEL:
+    name: 'PoseEst'
+
+TEST:
+    batch_size: 64
+    shuffle: False
+    weight_path: './experiment/pretrained/pose_3dpw.pth.tar'

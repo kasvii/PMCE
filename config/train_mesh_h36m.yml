@@ -1,0 +1,37 @@
+DATASET:
+    train_list: ['Human36M']
+    test_list: ['Human36M']
+    input_joint_set: 'human36'
+    target_joint_set: 'human36'
+    workers: 16
+    use_gt_input: False
+
+MODEL:
+    name: 'PMCE'
+    hpe_dim: 256
+    hpe_dep: 3
+    joint_dim: 64
+    vertx_dim: 64
+    normal_loss_weight: 0.1
+    edge_loss_weight: 20
+    joint_loss_weight: 0.001
+    posenet_pretrained: True
+    posenet_path: './experiment/pretrained/pose_h36m.pth.tar'
+
+TRAIN:
+    print_freq: 20
+    batch_size: 32
+    shuffle: True
+    begin_epoch: 1
+    end_epoch: 30
+    edge_loss_start: 10
+    scheduler: 'step'
+    lr: 0.0001
+    lr_step: [10, 20]
+    lr_factor: 0.9
+    optimizer: 'adam'
+    wandb: True
+
+TEST:
+    batch_size: 64
+    shuffle: False

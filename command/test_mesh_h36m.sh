@@ -1,0 +1,1 @@
+python ./main/test.py --cfg ./config/test_mesh_h36m.yml --gpu 5
