@@ -71,6 +71,9 @@ sh requirements.sh
 - For the SMPL layer, We used [smplpytorch](https://github.com/gulvarol/smplpytorch). The repo is already included in `./smplpytorch` folder.
 - Download `basicModel_f_lbs_10_207_0_v1.0.0.pkl`, `basicModel_m_lbs_10_207_0_v1.0.0.pkl`, and `basicModel_neutral_lbs_10_207_0_v1.0.0.pkl` from [here](https://smpl.is.tue.mpg.de/downloads) (female & male) and [here](http://smplify.is.tue.mpg.de/) (neutral) to `./smplpytorch/smplpytorch/native/models`.
 
+3. Download base data
+- Download `base_data` from [OneDrive](https://1drv.ms/f/s!Alg46BPWJg_XgVf-q5qKdkalhgOj?e=1PZmQz). Put it below `./data` folder.
+
 ## Quick Demo
 1. Install [ViTPose](https://github.com/ViTAE-Transformer/ViTPose). PMCE uses the off-the-shift 2D pose detectors to detect persons from images. Here we take and install ViTPose. 
 ```bash
