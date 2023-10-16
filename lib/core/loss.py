@@ -66,7 +66,7 @@ class NormalVectorLoss(nn.Module):
         v2_out = coord_out[:, face[:, 2], :] - coord_out[:, face[:, 0], :]
         v2_out = F.normalize(v2_out, p=2, dim=2)  # L2 normalize to make unit vector
         v3_out = coord_out[:, face[:, 2], :] - coord_out[:, face[:, 1], :]
-        v3_out = F.normalize(v3_out, p=2, dim=2)  # L2 nroamlize to make unit vector
+        v3_out = F.normalize(v3_out, p=2, dim=2)  # L2 normalize to make unit vector
 
         v1_gt = coord_gt[:, face[:, 1], :] - coord_gt[:, face[:, 0], :]
         v1_gt = F.normalize(v1_gt, p=2, dim=2)  # L2 normalize to make unit vector
