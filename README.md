@@ -171,10 +171,10 @@ bash train_pose_3dpw.sh
 Stage 2: To train the all network for final mesh. Configs of the experiments can be found and edited in `./config` folder. Change `posenet_path` in `./config/train_mesh_*.yml` to the path of the pre-trained pose model.
 ```bash
 # Human3.6M
-bash train_pose_h36m.sh
+bash train_mesh_h36m.sh
 
 # 3DPW
-bash train_pose_3dpw.sh
+bash train_mesh_3dpw.sh
 ```
 
 
