@@ -159,7 +159,7 @@ Change the `weight_path` in the corresponding `./config/test_*.yml` to your mode
 
 
 ### Train
-Stage 1 (optional): Train the 3D pose estimation stream or you can directly use our pre-traind pose model `./experiment/pretrained/pose_*.pth.tar` for Stage 2.
+Stage 1 (optional): Train the 3D pose estimation stream or you can directly use our pre-trained pose model `./experiment/pretrained/pose_*.pth.tar` for Stage 2.
 ```bash
 # Human3.6M
 bash train_pose_h36m.sh
