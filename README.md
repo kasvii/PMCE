@@ -173,7 +173,7 @@ Stage 2: To train the all network for final mesh. Configs of the experiments can
 # Human3.6M
 bash train_mesh_h36m.sh
 
-# 3DPW
+# 3DPW & MPII3D
 bash train_mesh_3dpw.sh
 ```
 
