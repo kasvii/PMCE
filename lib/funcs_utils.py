@@ -40,7 +40,7 @@ class timer():
         self.t0 = time.time()
 
     def toc(self):
-        self.acc += time.time() - self.t0  # cacluate time diff
+        self.acc += time.time() - self.t0  # calculate time diff
 
     def reset(self):
         self.acc = 0
@@ -102,7 +102,7 @@ def get_scheduler(optimizer):
     scheduler = None
     if cfg.TRAIN.scheduler == 'step':
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=cfg.TRAIN.lr_step, gamma=cfg.TRAIN.lr_factor)
-    elif cfg.TRAIN.scheduler == 'platue':
+    elif cfg.TRAIN.scheduler == 'plateau':
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=cfg.TRAIN.lr_factor, patience=10, min_lr=1e-5)
 
     return scheduler
