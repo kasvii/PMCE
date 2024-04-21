@@ -25,6 +25,8 @@ torch.manual_seed(args.seed)
 os.environ['PYTHONHASHSEED'] = str(args.seed)
 random.seed(args.seed)
 np.random.seed(args.seed)
+torch.cuda.manual_seed(seed)
+torch.cuda.manual_seed_all(seed)
 os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
 print("Work on GPU: ", os.environ['CUDA_VISIBLE_DEVICES'])
 
